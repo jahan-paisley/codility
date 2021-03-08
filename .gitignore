@@ -1,0 +1,14 @@
+/target/
+/.settings/*
+/.project
+/.classpath
+/logs/*
+.DS_Store
+.idea
+target/
+.springBeans
+*.iml
+*.MF
+*.factorypathdata
+data
+out
