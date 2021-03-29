@@ -1,11 +1,14 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-public class Solution4 {
+/**
+ * https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+ */
+public class Solution3CyclicRotation {
     public int[] solution(int[] A, int k) {
         if (A.length == 0) return A;
         if (k == 0 || k % A.length == 0) return A;

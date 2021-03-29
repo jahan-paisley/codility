@@ -1,4 +1,4 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class Solution7 {
+/**
+ * https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+ */
+public class Solution5Brackets {
     public int solution(String input) {
         if (input.length() % 2 == 1) return 0;
         if (input.length() == 0) return 1;

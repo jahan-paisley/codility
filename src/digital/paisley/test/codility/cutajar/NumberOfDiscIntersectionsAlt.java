@@ -1,4 +1,4 @@
-package digital.paisley.test.cutajar;
+package digital.paisley.test.codility.cutajar;
 
 import java.util.Arrays;
 

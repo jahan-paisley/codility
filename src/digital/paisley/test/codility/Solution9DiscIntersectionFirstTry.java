@@ -1,4 +1,4 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Solution11FirstTry {
+public class Solution9DiscIntersectionFirstTry {
     public int solution(int[] A) {
         List<Map.Entry<Integer, Integer>> discs = IntStream.range(0, A.length)
                 .boxed()

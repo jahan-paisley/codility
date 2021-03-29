@@ -1,4 +1,4 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -7,8 +7,10 @@ import org.opentest4j.AssertionFailedError;
 import java.util.Arrays;
 import java.util.Random;
 
-@SuppressWarnings("DuplicatedCode")
-public class Solution6 {
+/**
+ * https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
+ */
+public class Solution4MaxCounters {
     public int[] solution(int N, int[] A) {
         int[] counters = new int[N];
         Arrays.fill(counters, 0);

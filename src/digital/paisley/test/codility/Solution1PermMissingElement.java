@@ -1,9 +1,12 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Solution1 {
+/**
+ * https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
+ */
+public class Solution1PermMissingElement {
     public int solution(int[] A) {
         if (A.length == 0) return 1;
         int n = A.length + 1;

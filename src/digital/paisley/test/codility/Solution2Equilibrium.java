@@ -1,9 +1,12 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Solution3 {
+/**
+ * https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+ */
+public class Solution2Equilibrium {
     public int solution(int[] A) {
         if (A.length == 0) return 0;
         int min_diff_index = -1;

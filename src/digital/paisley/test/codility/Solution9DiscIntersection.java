@@ -1,6 +1,6 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
-import digital.paisley.test.cutajar.NumberOfDiscIntersectionsAlt;
+import digital.paisley.test.codility.cutajar.NumberOfDiscIntersectionsAlt;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,10 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Solution11 {
+/**
+ * https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
+ */
+public class Solution9DiscIntersection {
     public int solution(int[] A) {
         System.out.println(Arrays.toString(A));
 

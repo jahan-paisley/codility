@@ -3,8 +3,10 @@ package digital.paisley.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-public class Solution10WithHint {
+//
+//     Solved With Hint Video
+//
+public class Solution8MaxProfitWithHint {
     public int solution(int[] A) {
         if (A.length == 1)
             return A[0];

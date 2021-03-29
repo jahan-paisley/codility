@@ -1,4 +1,4 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,11 @@ import org.junit.jupiter.api.Test;
 import java.util.Map;
 import java.util.Stack;
 
-public class Solution8 {
+/**
+ * https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
+ * Solved by watching hint video
+ */
+public class Solution6Fish {
     public enum WhoEatsWho {
         StackEatsArray,
         ArrayEatsStack,
@@ -15,30 +19,30 @@ public class Solution8 {
 
     public int solution(int[] weights, int[] direction) {
         if (direction.length == 1) return 1;
-        Stack<Map.Entry<Integer, Integer>> fishDirWeiStack = new Stack<>();
-        fishDirWeiStack.push(Map.entry(direction[0], weights[0]));
+        Stack<Map.Entry<Integer, Integer>> fishDirWeightStack = new Stack<>();
+        fishDirWeightStack.push(Map.entry(direction[0], weights[0]));
 
         for (int i = 1; i < direction.length && i >= 1; i++) {
             int arrHeadDir = direction[i];
             int arrHeadWei = weights[i];
             Map.Entry<Integer, Integer> newEntry = Map.entry(arrHeadDir, arrHeadWei);
-            if (fishDirWeiStack.isEmpty()) {
-                fishDirWeiStack.push(newEntry);
+            if (fishDirWeightStack.isEmpty()) {
+                fishDirWeightStack.push(newEntry);
                 continue;
             }
-            switch (whoEatsWho(fishDirWeiStack, arrHeadDir, arrHeadWei)) {
+            switch (whoEatsWho(fishDirWeightStack, arrHeadDir, arrHeadWei)) {
                 case StackEatsArray:
                     break;
                 case ArrayEatsStack:
-                    fishDirWeiStack.pop();
+                    fishDirWeightStack.pop();
                     i--;
                     break;
                 case None:
-                    fishDirWeiStack.push(newEntry);
+                    fishDirWeightStack.push(newEntry);
                     break;
             }
         }
-        return fishDirWeiStack.size();
+        return fishDirWeightStack.size();
     }
 
     WhoEatsWho whoEatsWho(Stack<Map.Entry<Integer, Integer>> fishDirWeiStack, int arrHeadDir, int arrHeadWei) {

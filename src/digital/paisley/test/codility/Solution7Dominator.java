@@ -1,11 +1,15 @@
-package digital.paisley.test;
+package digital.paisley.test.codility;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 
-public class Solution9WithHint {
+/**
+ * https://app.codility.com/programmers/lessons/8-leader/dominator/
+ * Solved by watching hint video
+ */
+public class Solution7Dominator {
     public int solution(int[] A) {
         if (A.length == 0)
             return -1;
