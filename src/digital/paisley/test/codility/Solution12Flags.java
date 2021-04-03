@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
  */
 public class Solution12Flags {
     public int solution(int[] A) {
-        
+
         return 0;
     }
 

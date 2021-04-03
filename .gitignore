@@ -12,3 +12,5 @@ target/
 *.factorypathdata
 data
 out
+src/digital/paisley/test/evotec
+
